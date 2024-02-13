@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="with=device-with", initial-scale="1.0">
+  <title> Your WebTerminal </title>
+  <style> body {
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif; margin: 20px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200%;
+    margin: 0 auto;
+    padding: 20 px;
+    background-color: rgb(63, 219, 2);
+  } 
+  @media  screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    
+  }
+  @media screen and (min-width: 601px) and (max-width: 900px) {
+    .container{
+        font-size: 16px;
+    }    
+  }
+
+</style>
+</head>
+<body>
+<div class="container">
+
+  <form method="POST" action="/form">     
+      <br>
+      <label> Type in an operator: </label><input name= "OperatorfCalc" type="string" value= "" />
+      <br>
+      <br> <br>
+      <input type="submit" value="submit" />
+  </form>
+</div>
+</body>
+</html>
