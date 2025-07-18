@@ -27,4 +27,4 @@ jobs:
       run: go build -v -x -o term .
 
     - name: Test
-      run: go test -v .
+      run: go run -v .
