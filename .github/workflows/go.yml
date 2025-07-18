@@ -25,9 +25,3 @@ jobs:
       run: go mod init github.com/666hwll/WebTerminal
     - name: Build
       run: go build -v -x -o term .
-
-    - name: Get Runner Public IP
-      run: curl https://api.ipify.org
-    
-    - name: Test
-      run: go run -v .
